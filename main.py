@@ -16,4 +16,4 @@ else:
 
 if jogo == True:
     while jogo:
-        
+
