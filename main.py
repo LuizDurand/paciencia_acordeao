@@ -1,3 +1,4 @@
+
 #importa as funções
 import cria_baralho
 import Extrai_Naipe
@@ -5,6 +6,7 @@ import extrai_valor
 import lista_movimento_possíveis
 import possui_movimentos_possiveis
 import empilha_cartas
+import random
 #começa jogo
 jogo = False
 
@@ -16,3 +18,14 @@ else:
 
 if jogo == True:
     while jogo:
+    
+
+        denovo = input('Quer jogar novamente? ')
+        if denovo == 'sim':
+            jogo = True 
+        else: 
+            jogo = False 
+
+
+               
+        
