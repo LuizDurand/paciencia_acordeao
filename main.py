@@ -1,11 +1,11 @@
 
 #importa as funções
-import cria_baralho
-import Extrai_Naipe
-import extrai_valor
-import lista_movimento_possíveis
-import possui_movimentos_possiveis
-import empilha_cartas
+from cria_baralho import *
+from Extrai_Naipe import *
+from extrai_valor import *
+from lista_movimento_possíveis import *
+from possui_movimentos_possiveis import *
+from empilha_cartas import *
 import random
 #começa jogo
 jogo = False
@@ -17,7 +17,13 @@ else:
     jogo = False
 
 if jogo == True:
+    v_cartas = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
     while jogo:
+        baralho = cria_baralho()
+        print('Este é o seu baralho {0}'.format(baralho))
+
+        
+
     
 
         denovo = input('Quer jogar novamente? ')
@@ -25,6 +31,8 @@ if jogo == True:
             jogo = True 
         else: 
             jogo = False 
+
+
 
 
                
